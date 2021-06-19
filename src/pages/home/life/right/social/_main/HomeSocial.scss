@@ -1,0 +1,22 @@
+/* --------------- */
+
+$bg-cl: (--blue, --blue, --border-fashion, --blue-tear);
+
+
+/* --------------- */
+
+.HomeSocial_item{
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    @for $i from 1 to 5 {
+        &:nth-child(#{$i}){
+            &:hover{
+                &>div{
+                    background-color: var(#{nth($bg-cl, $i)});
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.HomeShortContent_content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    line-height: 1.5rem;
+    max-height: 3rem;
+    overflow: hidden;
+}

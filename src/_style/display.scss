@@ -1,0 +1,93 @@
+/* --------------------- Display -------------------------- */
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.inline-flex{
+    display: inline-flex;
+}
+
+/* --------------------- ALIGN -------------------------- */
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-end{
+    align-items: flex-end;
+}
+
+.align-self-end{
+    align-self: flex-end;
+}
+
+/* --------------------- COLUMN -------------------------- */
+.col-reverse{
+    flex-direction: column-reverse;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+/* --------------------- FLEX -------------------------- */
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+/* --------------------- Justify -------------------------- */
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+/* --------------------- ROW -------------------------- */
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+/* --------------------- Complex -------------------------- */
+
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

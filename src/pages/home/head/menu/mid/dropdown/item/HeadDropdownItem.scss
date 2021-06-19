@@ -1,0 +1,17 @@
+
+// 
+.HeadDropdownItem_title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+
+    line-height: 1.5rem;
+    height: 4.5rem;
+}
+
+// 
+.HeadDropdownItem_foot{
+    margin-top: 0.5rem;
+    font-size: 12px;
+}

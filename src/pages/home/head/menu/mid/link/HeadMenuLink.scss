@@ -1,0 +1,8 @@
+.HeadMenuLink{
+    &:hover{
+        color: goldenrod;
+    }
+    &>div{
+        padding: 1.7rem 1rem;
+    }
+}

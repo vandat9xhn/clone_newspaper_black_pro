@@ -1,0 +1,38 @@
+.ContentOnBg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(
+            0deg,
+            #000000,
+            #000000 7%,
+            rgba(0, 0, 0, 0.2) 70%,
+            rgba(0, 0, 0, 0.9)
+        );
+        background: linear-gradient(
+            0deg,
+            #000000,
+            #000000 7%,
+            rgba(0, 0, 0, 0.2) 70%,
+            rgba(0, 0, 0, 0.9)
+        );
+    }
+}
+
+//
+.ContentOnBg_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+}

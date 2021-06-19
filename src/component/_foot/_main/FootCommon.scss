@@ -1,0 +1,17 @@
+.foot-item {
+    font-size: 13px;
+    color: var(--md-color-secondary);
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.foot-title{
+    margin: 0 0 1.5rem 0;
+}
+
+.foot-time{
+    margin-top: 0.25rem;
+    font-size: 12px;
+}

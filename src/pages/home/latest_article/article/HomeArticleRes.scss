@@ -1,0 +1,12 @@
+// 
+@media (max-width: 800px) {
+    .HomeArticle{
+        .HomeImgList_col {
+            width: 100%;
+            padding-top: 100%;
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// 
+@media (max-width: 1280px) {
+    .HeadMenu{
+        padding: 0 25px;
+        font-size: 13px;
+    }
+    
+    .HeadMenuLeft_title{
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .HeadMenuMid{
+        padding-left: 0;
+    }
+}
+
+// 
+@media (max-width: 810px) {
+    .HeadMenu_right{
+        display: none;
+    }
+}
+
+// 
+@media (max-width: 650px) {
+    .HeadMenu{
+        padding: 0 10px;
+    }
+
+    .HeadMenuLeft_title{
+        padding-right: 1rem;
+    }
+
+    .HeadMenu_mid{
+        flex-grow: 1;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,16 @@
+
+.HeadDropdown{
+    min-height: 10rem;
+    overflow: hidden;
+}
+
+// .
+.HeadDropdown_row{
+    transition: transform 250ms;
+}
+// ..
+.HeadDropdown_item{
+    width: 25%;
+    padding: 10px;
+    flex-shrink: 0;
+}
