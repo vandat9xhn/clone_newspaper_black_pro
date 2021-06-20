@@ -18,10 +18,6 @@ function HomeLife(props) {
     return (
         <div ref={ref_life}>
             <div>
-                <h2>Life</h2>
-            </div>
-
-            <div>
                 <div className="home-row">
                     <div className="home-left">
                         <HomeLifeLeft />

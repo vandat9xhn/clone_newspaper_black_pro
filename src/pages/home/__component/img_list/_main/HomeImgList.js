@@ -16,16 +16,11 @@ function HomeImgList({ title, data_arr }) {
     //
     return (
         <div className="HomeImgList">
-            <div>
-                <h2>{title}</h2>
-            </div>
+            <h2 className="home-title">{title}</h2>
 
             <div className="display-flex space-between flex-wrap">
                 {data_arr.map((item, ix) => (
-                    <div
-                        className="HomeImgList_col position-rel"
-                        key={`${ix}`}
-                    >
+                    <div className="HomeImgList_col position-rel" key={`${ix}`}>
                         <div className="pos-abs-100">
                             <div className="wh-100">
                                 <ContentOnBg

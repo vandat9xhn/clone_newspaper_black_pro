@@ -19,7 +19,7 @@ function InputSearch({ value, handleChange, handleSearch, handleKeydown }) {
 
     //
     return (
-        <div className="InputSearch">
+        <div className="InputSearch brs-5px">
             <div className="InputSearch_row display-flex align-items-center">
                 <div className="InputSearch_input flex-grow-1">
                     <div className="InputSearch_input-contain">

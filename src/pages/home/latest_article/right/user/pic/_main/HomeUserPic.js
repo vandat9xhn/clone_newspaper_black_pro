@@ -1,21 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// 
+//
 import HomeUserPicItem from '../item/HomeUserPicItem';
-// 
-import insta_4 from  '../../../../../../../../image/12/insta_4.jpg';
+//
+import { default_ins_image_arr } from '../../../../../__default/HomeHeadDefault';
 
-// 
-HomeUserPic.propTypes = {
-    
-};
+//
+HomeUserPic.propTypes = {};
 
-// 
+//
 function HomeUserPic(props) {
-    // 
-    const pic_arr = new Array(9).fill(insta_4)
+    //
+    const pic_arr = default_ins_image_arr;
 
-    // 
+    //
     return (
         <div>
             <div className="display-flex flex-wrap">

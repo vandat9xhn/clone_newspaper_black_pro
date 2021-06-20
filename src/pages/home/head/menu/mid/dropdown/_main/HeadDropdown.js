@@ -55,9 +55,7 @@ function HeadDropdown({
                             }`}
                             onClick={handlePrev}
                         >
-                            <i className="td-next-prev-icon td-icon-left-arrow">
-                                Prev
-                            </i>
+                            <i className="fas fa-angle-left"></i>
                         </div>
 
                         <div
@@ -68,9 +66,7 @@ function HeadDropdown({
                             }`}
                             onClick={handleNext}
                         >
-                            <i className="td-next-prev-icon td-icon-right-arrow">
-                                Next
-                            </i>
+                            <i className="fas fa-angle-right"></i>
                         </div>
                     </div>
                 </div>

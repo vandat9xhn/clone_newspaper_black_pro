@@ -13,7 +13,9 @@ function HomeSocialItem({ icon, follow_count }) {
         <div className="HomeSocialItem bg-primary cursor-pointer">
             <div className="flex-between-center">
                 <div className="display-flex">
-                    <div className="HomeSocialItem_icon">{icon}</div>
+                    <div className="HomeSocialItem_icon">
+                        <i className={icon}></i>
+                    </div>
 
                     <div>{follow_count} Follows</div>
                 </div>

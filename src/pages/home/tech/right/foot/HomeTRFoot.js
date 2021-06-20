@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_politics_l } from '../../../head/__default/HomeHeadDefault';
+import { default_music_l } from '../../../__default/HomeHeadDefault';
 //
 import HomeContentImage from '../../../__component/img_content/HomeContentImage';
 //
@@ -12,7 +12,7 @@ HomeTRFoot.propTypes = {};
 
 //
 function HomeTRFoot() {
-    const new_right_arr = default_politics_l;
+    const new_right_arr = default_music_l;
 
     //
     return (
@@ -27,7 +27,7 @@ function HomeTRFoot() {
                         <div>
                             <HomeContentImage
                                 img={item.img}
-                                content={item.content}
+                                content={item.title}
                                 created_time={item.created_time}
                             />
                         </div>

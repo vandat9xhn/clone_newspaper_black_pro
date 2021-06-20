@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // 
-import { default_politics_l } from '../../../head/__default/HomeHeadDefault';
+import { default_finance_l } from '../../../__default/HomeHeadDefault';
 //
 import HomeContentImage from '../../../__component/img_content/HomeContentImage';
 //
@@ -12,13 +12,13 @@ HomeNRFoot.propTypes = {};
 
 //
 function HomeNRFoot() {
-    const new_right_arr = default_politics_l;
+    const new_right_arr = default_finance_l;
 
     //
     return (
         <div className={`HomeNRFoot`}>
             <div>
-                <h2 className="HomeNRFoot_title margin-0">Finance</h2>
+                <h2 className="home-title">Finance</h2>
             </div>
 
             <div>
@@ -27,7 +27,7 @@ function HomeNRFoot() {
                         <div>
                             <HomeContentImage
                                 img={item.img}
-                                content={item.content}
+                                content={item.title}
                                 created_time={item.created_time}
                             />
                         </div>

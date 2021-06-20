@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_tech_l } from '../../head/__default/HomeHeadDefault';
+import { default_politics_l } from '../../__default/HomeHeadDefault';
 //
 import HomeOneRowImg from '../../__component/img_list/_main/HomeImgList';
 //
@@ -13,7 +13,7 @@ HomePolitics.propTypes = {};
 //
 function HomePolitics(props) {
     //
-    const politics_arr = default_tech_l.slice(0, 3);
+    const politics_arr = default_politics_l.slice(0, 3);
 
     //
     return (

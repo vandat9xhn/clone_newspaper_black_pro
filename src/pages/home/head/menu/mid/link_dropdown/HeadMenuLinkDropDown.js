@@ -44,8 +44,8 @@ function HeadMenuLinkDropDown({ to, link_item, title_link, API_Dropdown_L }) {
         setMenuLinkState((menu_link_state) => ({
             ...menu_link_state,
             dropdown_arr: menu_link_state.has_fetched
-                ? [...dropdown_arr, ...data]
-                : data,
+                ? [...dropdown_arr, ...data.slice(4, 6)]
+                : data.slice(0, 4),
             has_fetched: true,
             is_fetching: false,
         }));

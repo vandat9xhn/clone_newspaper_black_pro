@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
+import { data_icon_social_obj } from '../../../../__data/icon_social';
+// 
 import HomeSocialItem from '../item/HomeSocialItem';
 // 
 import './HomeSocial.scss';
@@ -13,19 +15,19 @@ function HomeSocial(props) {
     //
     const social_arr = [
         {
-            icon: 'FB',
+            icon: data_icon_social_obj.fb,
             follow_count: 22000,
         },
         {
-            icon: 'IN',
+            icon: data_icon_social_obj.in,
             follow_count: 46000,
         },
         {
-            icon: 'Tw',
+            icon: data_icon_social_obj.tw,
             follow_count: 500,
         },
         {
-            icon: 'SK',
+            icon: data_icon_social_obj.rss,
             follow_count: 50000,
         },
     ];

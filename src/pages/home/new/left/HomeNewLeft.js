@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_tech_l } from '../../head/__default/HomeHeadDefault';
+import { default_new_l } from '../../__default/HomeHeadDefault';
 // 
 import HomeImageContent from '../../__component/img_content/HomeImageContent';
 //
@@ -11,7 +11,8 @@ HomeNewLeft.propTypes = {};
 
 //
 function HomeNewLeft(props) {
-    const new_left_arr = default_tech_l;
+    // 
+    const new_left_arr = default_new_l;
 
     //
     return (

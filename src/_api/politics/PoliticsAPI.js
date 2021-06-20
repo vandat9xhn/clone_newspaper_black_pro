@@ -2,7 +2,7 @@ import axiosClientNoToken from '../_axios/AxiosNoToken';
 // 
 import { API_FakeReal } from '../_common/_ConstAPI';
 // 
-import { default_politics_l } from '../../pages/home/head/__default/HomeHeadDefault';
+import { default_politics_l } from '../../pages/home/__default/HomeHeadDefault';
 
 //
 export const API_Politics_L = (params) =>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_politics_l } from '../../../../../pages/home/head/__default/HomeHeadDefault';
+import { default_politics_l } from '../../../../../pages/home/__default/HomeHeadDefault';
 // 
 import FootBdMidItem from '../item/FootBdMidItem';
 

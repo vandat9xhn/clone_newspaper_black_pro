@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // 
+import { data_icon_social_obj } from '../../../../__data/icon_social';
+// 
 import './HeadMenuRight.scss';
 
 //
@@ -10,13 +12,13 @@ HeadMenuRight.propTypes = {};
 function HeadMenuRight(props) {
     const icon_arr = [
         {
-            icon: 'FB',
+            icon: data_icon_social_obj.fb,
         },
         {
-            icon: 'IN',
+            icon: data_icon_social_obj.in,
         },
         {
-            icon: 'TW',
+            icon: data_icon_social_obj.tw,
         },
     ];
 
@@ -26,7 +28,7 @@ function HeadMenuRight(props) {
             <div className="display-flex">
                 {icon_arr.map((item, ix) => (
                     <div key={`${ix}`} className="HeadMenuRight_item">
-                        <div>{item.icon}</div>
+                        <div><i className={item.icon}></i></div>
                     </div>
                 ))}
             </div>

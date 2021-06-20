@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_tech_l } from '../../head/__default/HomeHeadDefault';
+import { default_tech_l } from '../../__default/HomeHeadDefault';
 //
 import HomeOneRowImg from '../../__component/img_list/_main/HomeImgList';
 //

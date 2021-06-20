@@ -10,7 +10,7 @@ HomeTitleContent.propTypes = {};
 function HomeTitleContent({ name, title, content, created_time }) {
     //
     return (
-        <div className="HomeTitleContent padding-8px">
+        <div className="HomeTitleContent">
             <div>
                 <h2 className="HomeTitleContent_title">{title}</h2>
 

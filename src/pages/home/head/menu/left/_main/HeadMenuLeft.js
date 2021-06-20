@@ -9,7 +9,7 @@ HeadMenuLeft.propTypes = {};
 //
 function HeadMenuLeft(props) {
     return (
-        <div>
+        <div className="HeadMenuLeft">
             <div className="text-align-center">
                 <h2 className="HeadMenuLeft_title margin-0">Black</h2>
 

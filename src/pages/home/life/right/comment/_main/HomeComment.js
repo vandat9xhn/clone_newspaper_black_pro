@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { default_politics_l } from '../../../../head/__default/HomeHeadDefault';
+import { default_comment_l } from '../../../../__default/HomeHeadDefault';
 //
-import HomeContentImage from '../../../../__component/img_content/HomeContentImage';
 import HomeCommentItem from '../item/HomeCommentItem';
 //
 // import './HomeNLFoot.scss';
@@ -13,24 +12,8 @@ HomeComment.propTypes = {};
 
 //
 function HomeComment() {
-    const comment_arr = [
-        {
-            content:
-                'Sarah Sereno on Tesla’s Cybertruck fiasco cost Elon Musk $768 million in a single day',
-        },
-        {
-            content:
-                'Sarah Sereno on What’s the point of ‘Charlie’s Angels’ without Sam Rockwell dancing?',
-        },
-        {
-            content:
-                'Sarah Sereno on ‘Heathers’ is still the best dark comedy about high school hell',
-        },
-        {
-            content:
-                'Sarah Sereno on 8 things millennials wish you would just stop getting them for the holidays',
-        },
-    ];
+    // 
+    const comment_arr = default_comment_l;
 
     //
     return (

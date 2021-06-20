@@ -9,10 +9,10 @@ import HomeEntertainment from '../entertainment/_main/HomeEntertainment';
 import HomeLife from '../life/_main/HomeLife';
 import HomePolitics from '../politics/_main/HomePolitics';
 import HomeTech from '../tech/_main/HomeTech';
+import HomeLatestArticle from '../latest_article/_main/HomeLatestArticle';
 // 
 import './Home.scss';
 import './HomeRes.scss';
-import HomeLatestArticle from '../latest_article/_main/HomeLatestArticle';
 
 // 
 Home.propTypes = {
@@ -49,7 +49,7 @@ function Home(props) {
 
                     <div className="Home_body-part">
                         <HomeTech />
-                    </div>
+                    </div><hr />
 
                     <div className="Home_body-part">
                         <HomeLatestArticle />

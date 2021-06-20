@@ -10,10 +10,10 @@ HomeShortContent.propTypes = {};
 function HomeShortContent({ content, created_time }) {
     //
     return (
-        <div>
+        <div className="HomeShortContent">
             <h3 className="HomeShortContent_content margin-0">{content}</h3>
 
-            <div className="home-time text-secondary">
+            <div className="HomeShortContent_time home-time text-secondary">
                 {created_time}
             </div>
         </div>
