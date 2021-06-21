@@ -18,7 +18,7 @@ function HomeTRFoot() {
     return (
         <div className={`HomeTRFoot`}>
             <div>
-                <h2 className="HomeTRFoot_title">Music</h2>
+                <h1 className="HomeTRFoot_title">Music</h1>
             </div>
 
             <div>

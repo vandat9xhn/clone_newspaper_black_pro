@@ -45,7 +45,11 @@ function HomeArticle(props) {
     return (
         <div className="HomeArticle">
             <div>
-                <HomeImgList title="Latest article" data_arr={article_arr} />
+                <HomeImgList
+                    title="Latest article"
+                    data_arr={article_arr}
+                    show_name={true}
+                />
             </div>
 
             <div className={`HomeArticle_more ${is_max ? 'display-none' : ''}`}>
@@ -59,7 +63,9 @@ function HomeArticle(props) {
                     >
                         <span>Load more </span>
 
-                        <span><i className="fas fa-angle-down"></i></span>
+                        <span>
+                            <i className="fas fa-angle-down"></i>
+                        </span>
                     </button>
 
                     <div className={`${is_fetching ? '' : 'display-none'}`}>

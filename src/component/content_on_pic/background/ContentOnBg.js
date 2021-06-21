@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 //
 import './ContentOnBg.scss';
+import { useObserverVidPic } from '../../../_hook/useObserverVidPic';
 
 //
 ContentOnBg.propTypes = {
@@ -18,10 +19,19 @@ ContentOnBg.defaultProps = {
 
 //
 function ContentOnBg({ url, content, children, class_children }) {
+    //
+    const ref_content_elm = useRef(null);
+
+    //
+    const class_vid_pic = useObserverVidPic(ref_content_elm, false);
+
+    //
     return (
         <div
-            className="ContentOnBg position-rel wh-100"
-            style={{ backgroundImage: `url(${url})` }}
+            ref={ref_content_elm}
+            className={`ContentOnBg position-rel wh-100 ${class_vid_pic}`}
+            // style={{ backgroundImage: `url(${url})` }}
+            data-src={url}
         >
             <div className={class_children}>{children}</div>
             <div className="ContentOnBg_content font-bold">{content}</div>

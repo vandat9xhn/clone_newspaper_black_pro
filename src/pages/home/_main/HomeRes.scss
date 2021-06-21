@@ -55,6 +55,12 @@ $md-home: (1100px, 900px, 800px, 700px);
     }
 
     .home-left{
+        .HomeTitleContent_content {
+            display: block;
+        }
+    }
+
+    .home-left{
         width: 100%;
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;

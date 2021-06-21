@@ -18,7 +18,11 @@ function HomePolitics(props) {
     //
     return (
         <div>
-            <HomeOneRowImg title="Politics" data_arr={politics_arr} />
+            <HomeOneRowImg
+                title="Politics"
+                data_arr={politics_arr}
+                show_name={true}
+            />
         </div>
     );
 }

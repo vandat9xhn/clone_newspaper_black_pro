@@ -16,14 +16,14 @@ function HomeLifeLeft(props) {
     //
     return (
         <div>
-            <h2 className="home-title">Life</h2>
+            <h1 className="home-title">Life</h1>
 
             <div>
                 {new_left_arr.map((item, ix) => (
                     <div key={`${ix}`} className="home_item-left">
                         <HomeImageContent
                             img={item.img}
-                            name={item.name}
+                            name=""
                             title={item.title}
                             content={item.content}
                             created_time={item.created_time}

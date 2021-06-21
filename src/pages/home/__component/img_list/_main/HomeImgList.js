@@ -9,14 +9,22 @@ import './HomeImgList.scss';
 import './HomeImgListRes.scss';
 
 //
-HomeImgList.propTypes = {};
+HomeImgList.propTypes = {
+    title: PropTypes.string,
+    data_arr: PropTypes.array,
+    show_name: PropTypes.bool,
+};
+
+HomeImgList.defaultProps = {
+    show_name: false,
+};
 
 //
-function HomeImgList({ title, data_arr }) {
+function HomeImgList({ title, data_arr, show_name }) {
     //
     return (
         <div className="HomeImgList">
-            <h2 className="home-title">{title}</h2>
+            <h1 className="home-title">{title}</h1>
 
             <div className="display-flex space-between flex-wrap">
                 {data_arr.map((item, ix) => (
@@ -27,7 +35,7 @@ function HomeImgList({ title, data_arr }) {
                                     url={item.img}
                                     content={
                                         <HomeTitleContent
-                                            name={item.name}
+                                            name={show_name ? item.name : ''}
                                             title={item.title}
                                             created_time={item.created_time}
                                         />

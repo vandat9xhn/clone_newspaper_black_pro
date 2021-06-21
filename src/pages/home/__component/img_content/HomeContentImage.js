@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
+import VidPicObserve from '../../../../component/vid_pic_observe/VidPicObserve';
+//
 import Flex from '../../../../component/flex/Flex';
 //
 import HomeShortContent from '../content/HomeShortContent';
@@ -22,7 +24,7 @@ function HomeContentImage({ img, content, created_time }) {
                 }
                 ComponentRight={
                     <div>
-                        <img src={img} alt="" />
+                        <VidPicObserve img={img} />
                     </div>
                 }
                 flex_class=""

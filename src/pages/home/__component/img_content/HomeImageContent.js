@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
+import VidPicObserve from '../../../../component/vid_pic_observe/VidPicObserve';
+//
 import Flex from '../../../../component/flex/Flex';
 //
 import HomeTitleContent from '../content/HomeTitleContent';
-// 
+//
 import './HomeImageContent.scss';
 
 //
@@ -18,12 +20,12 @@ function HomeImageContent({ img, name, title, content, created_time }) {
             <Flex
                 ComponentLeft={
                     <div>
-                        <img src={img} alt="" />
+                        <VidPicObserve img={img} />
                     </div>
                 }
                 ComponentRight={
                     <HomeTitleContent
-                        name=""
+                        name={name}
                         title={title}
                         content={content}
                         created_time={created_time}

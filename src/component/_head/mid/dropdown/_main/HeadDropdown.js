@@ -26,7 +26,7 @@ function HeadDropdown({
             <div className={`${has_fetched ? '' : 'display-none'}}`}>
                 <ul
                     className={`HeadDropdown_row display-flex list-none ${
-                        is_fetching ? 'pointer-events-none opacity-5' : ''
+                        is_fetching ? 'pointer-events-none opacity-05' : ''
                     }`}
                     style={{ transform: `translateX(${-active_ix * 100}%)` }}
                 >
@@ -50,7 +50,7 @@ function HeadDropdown({
                         <div
                             className={`padding-8px ${
                                 active_ix == 0
-                                    ? 'pointer-events-none opacity-5'
+                                    ? 'pointer-events-none opacity-05'
                                     : 'cursor-pointer'
                             }`}
                             onClick={handlePrev}
@@ -61,7 +61,7 @@ function HeadDropdown({
                         <div
                             className={`padding-8px ${
                                 active_ix == 1
-                                    ? 'pointer-events-none opacity-5'
+                                    ? 'pointer-events-none opacity-05'
                                     : 'cursor-pointer'
                             }`}
                             onClick={handleNext}

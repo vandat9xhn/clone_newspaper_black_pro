@@ -18,7 +18,7 @@ function HomeNRFoot() {
     return (
         <div className={`HomeNRFoot`}>
             <div>
-                <h2 className="home-title">Finance</h2>
+                <h1 className="home-title">Finance</h1>
             </div>
 
             <div>

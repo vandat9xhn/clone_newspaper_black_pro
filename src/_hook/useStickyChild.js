@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 //
 export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
     //
     const [position, setPosition] = useState('static');
+
+    // 
+    const stop_handle_scroll = useRef(true)
 
     //
     useEffect(() => {
@@ -17,7 +20,18 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
     }, []);
 
     //
+    useEffect(() => {
+        window.addEventListener('orientationchange', resetPosition);
+
+        return () => {
+            window.removeEventListener('orientationchange', resetPosition);
+        };
+    }, []);
+
+    //
     function checkPositionAtFirst() {
+        stop_handle_scroll.current = false;
+
         if (window.innerWidth <= min_px) {
             setPosition('static');
 
@@ -45,6 +59,10 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
 
     //
     function handleWindowScroll() {
+        if (stop_handle_scroll.current) {
+            return;
+        }
+        
         if (window.innerWidth < min_px) {
             setPosition('static');
 
@@ -83,6 +101,13 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
             //
             return position;
         });
+    }
+
+    // 
+    function resetPosition(){
+        setTimeout(() => {
+            handleWindowScroll()
+        }, 100);
     }
 
     //
