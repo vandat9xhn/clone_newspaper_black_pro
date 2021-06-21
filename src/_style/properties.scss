@@ -1,11 +1,11 @@
 
-/* ------------------------------ ACTIVE ----------------------------- */
+/* ----------- ACTIVE ------------ */
 
 .act-scale-sm:active{
     transform: scale(0.95);
 }
 
-/* ------------------------------ BG BS HR ----------------------------- */
+/* ------------ BG BS HR ------------ */
 
 .bg-primary{
     background-color: var(--md-bg-primary);
@@ -16,7 +16,7 @@
 }
 
 .bg-vid-pic{
-    background-image: linear-gradient(to right, #121111, #545454, #545454, #131212);
+    background-image: linear-gradient(to right, #121111, #545454 25%, #131212 75%);
 }
 
 .bg-loader{
@@ -43,7 +43,7 @@
     background-color: var(--blue);
 }
 
-/* ----------------------- Box Shadow --------------------------------- */
+/* ----------- Box Shadow ------------ */
 .App_box_shadow{
     box-shadow: 0 0.2rem 0.5rem 0.07rem var(--md-box-shadow);
 }
@@ -64,7 +64,7 @@
 }
 
 
-/* ------------------------ BORDER --------------------------- */
+/* ----------- BORDER ------------ */
 
 /* border-radius */
 .brs-5px{
@@ -111,7 +111,7 @@
 
 
 
-/* ---------------------------- CURSOR -------------------------*/
+/* ------------ CURSOR -------------*/
 .cursor-pointer{
     cursor: pointer;
 }
@@ -121,7 +121,7 @@
 }
 
 
-/* ---------------------------- HOVER -------------------------*/
+/* ------------ HOVER -------------*/
 .hv-cl-blue:hover{
     color: var(--blue);
 }
@@ -151,7 +151,7 @@
     }
 }
 
-/* ----------------------------NavLink active -------------------------*/
+/* ------------NavLink active ------------*/
 .active-color{
     color: var(--blue);
 }
@@ -169,7 +169,7 @@
 }
 
 
-/* -------------------------- Margin --------------------------------- */
+/* ------------ Margin ------------ */
 .margin-auto{
     margin-left: auto;
     margin-right: auto;
@@ -183,24 +183,24 @@
     margin-left: 5px;
 }
 
-/* ------------------------ OPACITY -------------------------- */
+/* ------------ OPACITY -------------- */
 .opacity-5{
     opacity: 0.5;
 }
 
 
-/* ---------------------------- POINTER EVENTS -------------------------*/
+/* ---------- POINTER EVENTS -----------*/
 .pointer-events-none{
     pointer-events: none;
 }
 
-/* ---------------------------- POINTER EVENTS -------------------------*/
+/* ------------- POINTER EVENTS -----------*/
 .padding-8px{
     padding: 8px;
 }
 
 
-/* ------------------------ TEXT -------------------------- */
+/* ------------ TEXT ------------- */
 
 /* normal */
 .normal-text{
@@ -268,7 +268,7 @@
     text-align: center;
 }
 
-/* ---------------------------- ICON -------------------------*/
+/* ---------- ICON -------------*/
 .size_icon{
     width: 1.5rem;
 }
@@ -284,14 +284,12 @@
 }
 
 
-/* ----------------------- Webkit Scroll ------------------------*/
+/* ----------- Webkit Scroll ----------*/
 .scroll-thin::-webkit-scrollbar{
     width: 0.5rem;
 }
 .scroll-thin::-webkit-scrollbar-track{
     border-radius: 5px;
-    // background-color: rgb(247, 247, 247);
-    // box-shadow: 0 0 10px 0px black;
 }
 .scroll-thin::-webkit-scrollbar-thumb{
     background-color: transparent;
@@ -312,13 +310,13 @@
     width: 0;
 }
 
-/* ----------------------- Webkit input ------------------------*/
+/* -------------- Webkit input -----------*/
 .inner-spin-none::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
 
-/* --------------------- WIDTH ------------------------ */
+/* ------------ WIDTH ------------- */
 .width-fit-content{
     width: fit-content;
 }

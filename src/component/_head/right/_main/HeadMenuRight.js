@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // 
-import { data_icon_social_obj } from '../../../../__data/icon_social';
+import { data_icon_social_obj } from '../../../../pages/home/__data/icon_social';
 // 
 import './HeadMenuRight.scss';
 

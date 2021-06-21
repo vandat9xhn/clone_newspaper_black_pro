@@ -25,13 +25,8 @@ const devServer = {
 const is_prod = process.env.ENVIRONMENT === 'production';
 // const is_prod = true;
 
-// Config
+// 
 const config = {
-    // resolve: {
-    // alias: {
-    //     '': path.resolve(__dirname, './src'),
-    // },
-    // },
     //
     entry: {
         app: './src/index.js',
@@ -57,7 +52,10 @@ const config = {
             {
                 use: [
                     is_prod ? MiniCssExtractPlugin.loader : 'style-loader',
-                    { loader: 'css-loader', options: { sourceMap: true } },
+                    { 
+                        loader: 'css-loader', 
+                        options: { sourceMap: true },
+                    },
                     { loader: 'sass-loader' },
                 ],
                 test: /\.(c|sa|sc)ss$/,

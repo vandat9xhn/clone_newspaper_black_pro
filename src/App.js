@@ -10,7 +10,7 @@ import './_style/classes.scss';
 //
 import { Routes } from './__routes/_main';
 import Foot from './component/_foot/_main/Foot';
-import HeadMenu from './pages/home/head/menu/_main/HeadMenu';
+import HeadMenu from './component/_head/_main/HeadMenu';
 //
 
 //

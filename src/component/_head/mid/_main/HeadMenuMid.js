@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //
-import { HOME_PATH } from '../../../../../../__routes/paths';
+import { HOME_PATH } from '../../../../__routes/paths';
 //
-import { menu_arr, menu_dropdown_arr } from '../../../__data/HomeHeadData';
+import { menu_arr, menu_dropdown_arr } from '../../../../pages/home/head/__data/HomeHeadData';
 //
 import './HeadMenuMid.scss';
 // 

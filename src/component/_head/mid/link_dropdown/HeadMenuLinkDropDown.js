@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 //
+import { useWidthDisabled } from '../../../../_hook/useResizeDisabled';
+//
 import HeadMenuLink from '../link/HeadMenuLink';
 import HeadDropdown from '../dropdown/_main/HeadDropdown';
 //
@@ -22,6 +24,9 @@ function HeadMenuLinkDropDown({ to, link_item, title_link, API_Dropdown_L }) {
 
     const { dropdown_arr, open_dropdown, has_fetched, is_fetching, active_ix } =
         menu_link_state;
+
+    //
+    const { disabled } = useWidthDisabled({ width: 700 });
 
     /* ----------- GET API ------------ */
 
@@ -104,20 +109,27 @@ function HeadMenuLinkDropDown({ to, link_item, title_link, API_Dropdown_L }) {
     }
 
     //
+    const is_mobile =
+        navigator.userAgent.toUpperCase().search('MOBILE') >= 0 || disabled;
+
+    //
     return (
         <div
             className="HeadMenuLinkDropDown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={is_mobile ? undefined : handleMouseEnter}
+            onMouseLeave={is_mobile ? undefined : handleMouseLeave}
         >
             <div>
                 <HeadMenuLink to={to}>
                     <div className={`${open_dropdown ? 'text-goldenrod' : ''}`}>
                         <span>{title_link}</span>
 
-                        <span className="HeadMenuLinkDropDown_icon">
-                            {/* <i className="tdb-sub-menu-icon td-icon-pluss"></i> */}
-                            {`  `}♦
+                        <span
+                            className={`HeadMenuLinkDropDown_icon ${
+                                is_mobile ? 'display-none' : ''
+                            }`}
+                        >
+                            +
                         </span>
                     </div>
                 </HeadMenuLink>
