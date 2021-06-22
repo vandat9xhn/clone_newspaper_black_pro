@@ -21,10 +21,10 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
 
     //
     useEffect(() => {
-        window.addEventListener('orientationchange', resetPosition);
+        window.addEventListener('resize', handleWindowResize);
 
         return () => {
-            window.removeEventListener('orientationchange', resetPosition);
+            window.removeEventListener('resize', handleWindowResize);
         };
     }, []);
 
@@ -104,10 +104,8 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
     }
 
     // 
-    function resetPosition(){
-        setTimeout(() => {
-            handleWindowScroll()
-        }, 100);
+    function handleWindowResize(){
+        checkPositionAtFirst()
     }
 
     //
