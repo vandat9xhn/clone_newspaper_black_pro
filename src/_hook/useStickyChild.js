@@ -5,8 +5,8 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
     //
     const [position, setPosition] = useState('static');
 
-    // 
-    const stop_handle_scroll = useRef(true)
+    //
+    const stop_handle_scroll = useRef(true);
 
     //
     useEffect(() => {
@@ -21,10 +21,16 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
 
     //
     useEffect(() => {
-        window.addEventListener('resize', handleWindowResize);
+        window.addEventListener(
+            'orientationchange',
+            handleWindowChangeOrientation
+        );
 
         return () => {
-            window.removeEventListener('resize', handleWindowResize);
+            window.removeEventListener(
+                'orientationchange',
+                handleWindowChangeOrientation
+            );
         };
     }, []);
 
@@ -59,12 +65,14 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
 
     //
     function handleWindowScroll() {
-        if (stop_handle_scroll.current) {
-            return;
-        }
-        
         if (window.innerWidth < min_px) {
             setPosition('static');
+
+            return;
+        }
+
+        if (stop_handle_scroll.current) {
+            checkPositionAtFirst();
 
             return;
         }
@@ -103,9 +111,11 @@ export function useStickyChild(ref_parent, ref_child, ref_sibling, min_px) {
         });
     }
 
-    // 
-    function handleWindowResize(){
-        checkPositionAtFirst()
+    //
+    function handleWindowChangeOrientation() {
+        if (!stop_handle_scroll.current) {
+            stop_handle_scroll.current = true;
+        }
     }
 
     //
